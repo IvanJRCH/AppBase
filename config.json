@@ -1,0 +1,12 @@
+{
+  "server": {
+    "host": "0.0.0.0",
+    "port": 7070,
+    "abrirNavegador": true
+  },
+  "gui": {
+    "apiBaseUrl": "",
+    "appName": "App",
+    "appVersion": "1.0.0"
+  }
+}

@@ -1,0 +1,55 @@
+# ==========================================
+# Dependencias
+# ==========================================
+node_modules/
+gui/node_modules/
+
+# ==========================================
+# Artefactos de compilación
+# ==========================================
+gui/build/
+.svelte-kit/
+gui/.svelte-kit/
+*.map
+
+# Ejecutables generados por compilar.sh
+app
+app.exe
+*.exe
+
+# Archivos generados por detectar-addons.js (postinstall / compilar.sh)
+addons-nativos.js
+addons-assets.sh
+vendor-addons/
+node_modules/.cache-addons-win/
+
+# ==========================================
+# Datos y entornos
+# ==========================================
+*.sqlite
+*.sqlite3
+*.db
+.env
+.env.*
+!.env.example
+*.env
+
+# ==========================================
+# Logs y archivos temporales de prueba
+# ==========================================
+*.log
+.log
+_prueba-*.js
+_diag*.js
+tmp/
+temp/
+
+# ==========================================
+# Sistema operativo / editor
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+*.swp
+*.swo

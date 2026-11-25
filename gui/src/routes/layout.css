@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@plugin 'flowbite/plugin';
+@custom-variant dark (&:where(.dark, .dark *));
+@source "../../node_modules/flowbite-svelte/dist";
+@source "../../../modules";
+
+@theme {
+  --color-white: #ffffff;
+}
+
+body {
+  background-color: var(--color-white);
+
+  &:where(.dark, .dark *) {
+    background-color: #111827;
+  }
+}

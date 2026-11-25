@@ -1,0 +1,26 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Proyecto base de escritorio (sin login) con menú lateral responsivo y pantallas de ejemplo. Listo para compilar en Linux y Windows.",
+  "main": "main.js",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "dev": "bun main.js",
+    "postinstall": "bun detectar-addons.js",
+    "build:gui": "cd gui && npm run build",
+    "compile": "./compilar.sh",
+    "detect:addons": "bun detectar-addons.js"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "pg-connection-string": "^2.14.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.8",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "resedit": "^3.1.1",
+    "pe-library": "^2.0.3"
+  }
+}
